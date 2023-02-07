@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="plagiarism/copybridge/db" VERSION="20210809" COMMENT="XMLDB file for Moodle plagiarism/copybridge plugin"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+	<TABLES>
+		<TABLE NAME="plagiarism_copybridge" COMMENT="contains copybridge specific settings for each course module">
+			<FIELDS>
+				<FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+				<FIELD NAME="cm" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>				
+				<FIELD NAME="courseid" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+				<FIELD NAME="assignid" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+				
+				<FIELD NAME="isused" TYPE="int" LENGTH="1" NOTNULL="true" UNSIGNED="true" DEFAULT="1" SEQUENCE="false"/>
+				<FIELD NAME="isopen" TYPE="int" LENGTH="1" NOTNULL="true" UNSIGNED="true" DEFAULT="0" SEQUENCE="false"/>
+				<FIELD NAME="temp_configid" TYPE="char" LENGTH="1000" NOTNULL="false" SEQUENCE="false"/>
+			</FIELDS>
+			<KEYS>
+				<KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+			</KEYS>
+			<INDEXES>
+				<INDEX NAME="cm_open" UNIQUE="false" FIELDS="cm, isopen"/>
+				<INDEX NAME="courseid" UNIQUE="false" FIELDS="courseid"/>
+				<INDEX NAME="isused" UNIQUE="false" FIELDS="isused"/>
+			</INDEXES>
+		</TABLE>
+	</TABLES>
+</XMLDB>
