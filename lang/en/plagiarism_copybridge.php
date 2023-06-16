@@ -48,7 +48,7 @@ $string['copybridge_open_desc']='If enabled, \'Display Similarity Rate to Submit
 $string['savedconfigsuccess']='The settings have been saved.';
 
 // lib.php : get_form_elements_module()
-$string['assignsetting_title']='';
+$string['assignsetting_title']='Check Settings';
 $string['assignsetting_button']='Check Settings';
 $string['assignsetting_used']='Enable Similarity Check';
 $string['assignsetting_open']='Display Similarity Rate to Submitter';
@@ -60,3 +60,4 @@ $string['studentdisclosuredefault']='All uploaded files are submitted to the sim
 $string['url_script_empty']='Script address is not set. Please contact the manager.';
 $string['url_bridge_empty']='The CopyMonitor Bridge address is not set. Please contact the manager.';
 
+$string['privacy:plagiarism_copybridge']='The Plagiarism plugin only provides plagiarism result data.';

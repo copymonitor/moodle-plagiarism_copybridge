@@ -47,7 +47,7 @@ $string['copybridge_open_desc']='この設定を有効にした場合、新規�
 $string['savedconfigsuccess']='設定が保存されました。';
 
 // lib.php : get_form_elements_module()
-$string['assignsetting_title']='';
+$string['assignsetting_title']='チェック設定';
 $string['assignsetting_button']='チェック設定';
 $string['assignsetting_used']='類似度チェックを有効にする';
 $string['assignsetting_open']='提出者に類似度を表示する';
@@ -58,3 +58,5 @@ $string['studentdisclosuredefault']='アップロードされたすべてのフ�
 // module.js
 $string['url_script_empty']='Scriptアドレスが設定されていません。管理者にお問い合わせください。';
 $string['url_bridge_empty']='CopyMonitor Bridgeアドレスが設定されていません。 管理者にお問い合わせください。';
+
+$string['privacy:plagiarism_copybridge']='盗作プラグインは類似度チェックの結果データのみ提供します。';

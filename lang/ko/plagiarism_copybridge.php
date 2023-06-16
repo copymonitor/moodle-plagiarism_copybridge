@@ -58,3 +58,5 @@ $string['studentdisclosuredefault']='업로드된 모든 파일은 유사도 검
 // module.js
 $string['url_script_empty']='Script 주소가 설정되지 않았습니다. 관리자에게 문의하여주시기 바랍니다.';
 $string['url_bridge_empty']='CopyMonitor Bridge 주소가 설정되지 않았습니다. 관리자에게 문의하여주시기 바랍니다.';
+
+$string['privacy:plagiarism_copybridge']='표절플러그인에서는 표절 결과 데이터만을 제공합니다.';

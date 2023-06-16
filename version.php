@@ -24,9 +24,9 @@
  */
 
 
-$plugin->version = 2023013100;
+$plugin->version = 2023061500;
+$plugin->release = '1.0.4';
 $plugin->requires = 2020030600;
-$plugin->cron = 0;
 $plugin->component = 'plagiarism_copybridge';
 $plugin->maturity = MATURITY_STABLE;
-$plugin->release = '1.0.2';
+$plugin->cron = 0;
